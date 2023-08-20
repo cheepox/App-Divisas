@@ -11,7 +11,7 @@ def Valor_RT():
 
         json_data = response.json()
 
-        # Acceder al valor del correo electrónico
+        # Acceder al valor de las variables
         Moneda= "DOLAR BLUE"
         valor_promedio = json_data['blue']['value_avg']
         valor_venta = json_data['blue']['value_sell']
@@ -109,7 +109,7 @@ def Grafico(dias_atras):
         plt.tight_layout()
 
         # Mostrar los gráficos en la misma ventana
-        plt.show()
+        plt.show()  
 
     except requests.exceptions.RequestException as e:
         print("Error al realizar la solicitud:", e)
